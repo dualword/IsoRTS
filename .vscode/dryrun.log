@@ -1,0 +1,22 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/daan/Programming/IsoRTS'
+ 
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+find: 'src': No such file or directory
+ 
+make makepch
+printf ''
+make -j8 makebuild
+printf '\n\033[0;34m⇛  Linking: bin/Release/game.exe'
+g++ -Llib/ -L/usr/local/lib -s -o bin/Release/game.exe '-Wl,-R$ORIGIN'  -lsfml-graphics -lsfml-audio -lsfml-network -lsfml-window -lsfml-system -lstdc++fs -lX11  -pthread
+printf '\n'
+printf '   \033[0;34mTarget is up to date.\n'
+make: Leaving directory '/home/daan/Programming/IsoRTS'
+ 
