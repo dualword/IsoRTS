@@ -19,6 +19,13 @@ Thumbs.db
 .DS_Store
 Platform/
 Utility/
+test/
+env/
+lib/
+content/
+.vscode/
+.github/
+
 
 # VS Code
 .vscode/ipch
